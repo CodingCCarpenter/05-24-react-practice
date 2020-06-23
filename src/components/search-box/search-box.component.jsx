@@ -5,6 +5,7 @@ import './search-box.styles.css';
 const SearchBox = () => 
 (
     <input 
+        className='search'
         type='search' 
         placeholder='search monsters' 
         onChange={e => 
