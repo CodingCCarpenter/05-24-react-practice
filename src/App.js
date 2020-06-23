@@ -31,7 +31,7 @@ class App extends Component {
     )
     return (
       <div className="App">
-        
+        <SearchBox />
         <CardList monsters={filteredMonsters} />
       </div>
     )
