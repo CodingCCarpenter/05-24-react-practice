@@ -1,7 +1,11 @@
+//React imports
 import React, { Component } from 'react';
 
+//Component imports
 import { CardList } from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component.jsx';
+
+//styles import
 import './App.css';
 
 class App extends Component {
