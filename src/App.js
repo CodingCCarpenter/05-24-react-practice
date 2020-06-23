@@ -22,10 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <input type='search' placeholder='search monsters' onChange={e => {
-          //if we want to do something immediately after setting the state, then we want to 
-          //pass in a function as a second argument to our setState method. Essentially saying setState and do this
-          this.setState({ searchField: e.target.value }, () => 
-            console.log(this.state));
+          this.setState({ searchField: e.target.value });
         }}/>
         <CardList monsters={this.state.monsters} />
       </div>
