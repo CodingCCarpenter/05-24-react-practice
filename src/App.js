@@ -22,6 +22,11 @@ class App extends Component {
     .then(response => response.json())
     .then(users => this.setState({ monsters: users }));
   }
+  
+  handleChange(e) {
+    //handle change event handler for search box
+    this.setState({ searchField: e.target.value })
+  }
 
   render() {
     const { monsters, searchField } = this.state;
