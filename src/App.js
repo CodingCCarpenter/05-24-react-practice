@@ -23,9 +23,9 @@ class App extends Component {
     .then(users => this.setState({ monsters: users }));
   }
   
-  handleChange(e) {
+  handleChange = (e) => {
     //handle change event handler for search box
-    this.setState({ searchField: e.target.value })
+    this.setState({ searchField: e.target.value });
   }
 
   render() {
@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
         <SearchBox 
           placeholder='search monsters'
-          handleChange={ e => this.setState({ searchField: e.target.value })}
+          handleChange={ this.handleChange }
         />
         <CardList monsters={filteredMonsters} />
       </div>
